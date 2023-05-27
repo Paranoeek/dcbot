@@ -1,0 +1,1 @@
+worker: python uro_bot.py
