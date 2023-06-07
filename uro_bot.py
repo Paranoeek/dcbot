@@ -1,3 +1,4 @@
+
 from discord.ext import commands 
 import discord
 from dataclasses import dataclass
@@ -8,6 +9,8 @@ import schedule
 import time
 import json
 import os
+
+
 
 if os.path.exists(os.getcwd()+ "/config.json"):
 
@@ -25,6 +28,7 @@ token = configData["token"]
 prefix = configData["Prefix"]
 
 
+
 CHANNEL_ID = 1095396174992773180
 
 today = datetime.date.today()
@@ -34,7 +38,11 @@ today_string = str(today)
 year_str = str(year)
 month_day_str = str(month_day)
 
+
+
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+
+
 
 
 async def daily_task():
@@ -53,7 +61,7 @@ async def daily_task():
         pass
     
 def schedule_task():
-    schedule.every().day.at("18:48").do(asyncio.ensure_future, daily_task())
+    schedule.every().day.at("15:57").do(asyncio.ensure_future, daily_task())
 
 @bot.event
 async def on_ready():

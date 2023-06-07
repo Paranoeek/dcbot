@@ -34,8 +34,8 @@ uro = [
 "12 grudnia 2000 - Marco",
 "25 grudnia 2000 - Daszek",
 "27 grudnia 2001 - Gumi",
-"17 maja 1998 - test",
-"17 maja 2003 - test1"
+"05 czerwca 1998 - test",
+"05 czerwca 2003 - test1"
 ]
 
  
